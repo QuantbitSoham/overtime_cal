@@ -1,0 +1,106 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "hash",
+ "creation": "2024-04-17 13:25:10.393741",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "worker_id",
+  "department",
+  "in_time",
+  "employee_overtime_hrs",
+  "column_break_crzco",
+  "worker_name",
+  "shift",
+  "out_time",
+  "reason_for_overtime",
+  "date"
+ ],
+ "fields": [
+  {
+   "fieldname": "worker_id",
+   "fieldtype": "Link",
+   "label": "Contractor",
+   "options": "Contractor"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "worker_id.department",
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Department"
+  },
+  {
+   "columns": 1,
+   "fieldname": "in_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "In Time"
+  },
+  {
+   "columns": 1,
+   "fieldname": "employee_overtime_hrs",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Overtime Hrs",
+   "precision": "2"
+  },
+  {
+   "fieldname": "column_break_crzco",
+   "fieldtype": "Column Break"
+  },
+  {
+   "columns": 2,
+   "fetch_from": "worker_id.name1",
+   "fieldname": "worker_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Contractor Name"
+  },
+  {
+   "columns": 1,
+   "fetch_from": "worker_id.shift",
+   "fieldname": "shift",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Shift",
+   "options": "Shift Type"
+  },
+  {
+   "columns": 1,
+   "fieldname": "out_time",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Out Time"
+  },
+  {
+   "columns": 2,
+   "fieldname": "reason_for_overtime",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Reason for Overtime"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-04-17 14:28:01.657116",
+ "modified_by": "Administrator",
+ "module": "overtime_cal",
+ "name": "Child Contractor OT Form",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

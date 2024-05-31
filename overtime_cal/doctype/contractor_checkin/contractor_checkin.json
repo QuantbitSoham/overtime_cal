@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "CONTR-CKIN-.MM.-.YYYY.-.######",
+ "creation": "2024-04-16 18:21:11.004188",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "contractor",
+  "contractor_name",
+  "log_type",
+  "column_break_p6aut",
+  "device_idlocation",
+  "time",
+  "section_break_xsiqt",
+  "shift",
+  "section_break_v6hjj",
+  "latitude",
+  "column_break_7mxfy",
+  "longitude"
+ ],
+ "fields": [
+  {
+   "fieldname": "contractor",
+   "fieldtype": "Link",
+   "label": "Contractor",
+   "options": "Contractor"
+  },
+  {
+   "fetch_from": "contractor.name1",
+   "fieldname": "contractor_name",
+   "fieldtype": "Data",
+   "label": "Contractor Name"
+  },
+  {
+   "fieldname": "log_type",
+   "fieldtype": "Select",
+   "label": "Log Type",
+   "options": "\nIN\nOUT"
+  },
+  {
+   "fieldname": "column_break_p6aut",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "device_idlocation",
+   "fieldtype": "Data",
+   "label": "Device Id/Location"
+  },
+  {
+   "default": "Now",
+   "fieldname": "time",
+   "fieldtype": "Datetime",
+   "label": "Time"
+  },
+  {
+   "fieldname": "section_break_xsiqt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fetch_from": "contractor.shift",
+   "fieldname": "shift",
+   "fieldtype": "Data",
+   "label": "Shift"
+  },
+  {
+   "fieldname": "section_break_v6hjj",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "latitude",
+   "fieldtype": "Data",
+   "label": "latitude"
+  },
+  {
+   "fieldname": "column_break_7mxfy",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "longitude",
+   "fieldtype": "Data",
+   "label": "longitude"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-04-27 11:48:27.346462",
+ "modified_by": "Administrator",
+ "module": "overtime_cal",
+ "name": "Contractor Checkin",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
